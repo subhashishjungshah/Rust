@@ -11,6 +11,7 @@ fn main() {
 
 // Example of a returning function
 fn returnAdd() -> i32 {
+    // There shouldn't be a semicolon at the end of the expression
     5 + 5
 }
 

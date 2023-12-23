@@ -25,6 +25,9 @@ fn main() {
 
     // Demonstration of compound types
     let mut tup: (i32, f64, u8) = (500, 6.4, 1);
+
+    let (p, q, r) = tup;
+    println!("The value of p is: {}", p);
     // This is a default formatter inside the rust
     println!("The value of tup is: {:?}", tup);
     // Returns one index of the tup
@@ -39,4 +42,12 @@ fn main() {
 
     // Retrieving a single element from the array
     println!("The value of arr is: {}", arr[0]);
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+
+    let a = [3; 5]; // Results in creating array of 5 elements with value 3
+}
+
+fn type_casting() {
+    let number: i32 = "42".parse().expect("Not a number!");
 }
